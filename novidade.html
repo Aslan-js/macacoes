@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Overall Cats</title>
+
+		<link rel="stylesheet"href="reset.css">
+		<link rel="stylesheet"href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo2.jpg" alt="logo do Overall Cats"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="novidade.html">Novidades</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="padrão" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="padrão" required placeholder="seuemail@dominio.com">
+				
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="padrão" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="cartao">Número do cartão</label>
+				<input type="number" id="cartao" class="padrão" required>
+
+				<label for="texto">Texto de aviso</label>
+				<textarea cols="50" rows="10" id="texto" class="padrão"></textarea>
+
+				<fieldset>
+					<legend>Como prefere que o boleto chegue?</legend>
+					<label><input type="radio" name="contato" value="email" checked>Email</label>
+
+					<label><input type="radio" name="contato" value="telefone">Telefone</label>
+
+					<label><input type="radio" name="contato" value="whatsapp">Whatsapp</label>
+					
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horario você prefere ser notificado?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+						<option>Madrugada</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox">Gotaria de cadastrar o seu cartão para roubar-mos o seu dinheiro?</label>
+				
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Dias</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda ~ Sexta</td>
+						<td>10:00 ~ 17:00</td>
+					</tr>
+					<tr>
+						<td>Sábado</td>
+						<td>13:00 ~ 17:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo-azul.png" alt="logo do Overall Cats">
+			<p class="copyright">&copy; Copyright Overall Cats - 2023</p>
+		</footer>
+	</body>
+</html>
